@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ChallengeContext } from './ChallengeContext';
 
 export const ChallengeList = () => {
-  const challenges = [];
+  const { challenges } = useContext(ChallengeContext);
 
   return (
     <main>
@@ -17,7 +18,7 @@ export const ChallengeList = () => {
               </li>
             ))}
           </ul>
-          <Link to="/new-challenge">
+          <Link to="/create-challenge">
             <b>create new challenge</b>
           </Link>
         </aside>

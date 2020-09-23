@@ -10,7 +10,7 @@ function App() {
     <Switch>
       <Route exact path="/" component={ChallengeList} />
       <Route path="/challenge/:challengeId" component={ChallengeItem} />
-      <Route path="/new-challenge" component={ChallengeCreate} />
+      <Route path="/create-challenge" component={ChallengeCreate} />
     </Switch>
   );
 }
